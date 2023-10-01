@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>País</title>
+</head>
+
+<body>
+    Estou no: <input type="text" name="txtpais" id="txtpais">
+    <input type="button" value="Calcular" onclick="clicar()">
+    <div id="res">
+
+    </div>
+
+    <script>
+        function clicar() {
+            var p = window.document.getElementById('txtpais')
+            var res = window.document.getElementById('res')
+
+            if (p.value == 'Brasil', 'brasil') {
+                res.innerHTML = `<p>Vivendo no ${p.value}, você é <strong>Brasileiro</strong></p>`
+            } else {
+                res.innerHTML = `<p>Vivendo na ${p.value}, você é <strong>Estrangeiro</strong></p>`
+            }
+        }
+
+    </script>
+</body>
+
+</html>
